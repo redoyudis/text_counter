@@ -9,4 +9,4 @@ def line_counter(path):
 
 
 lines = line_counter('email_text.txt')
-print(lines)
+print(f'this files has {lines} lines')

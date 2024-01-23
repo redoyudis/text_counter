@@ -1,5 +1,5 @@
 from pathlib import Path
-
+import sys
 
 def line_counter(path):
     file_path = Path(path)
@@ -7,6 +7,8 @@ def line_counter(path):
         line_count = sum(1 for x in file)
     return line_count
 
+argument = sys.argv
+path = argument[1]
 
-lines = line_counter('email_text.txt')
+lines = line_counter(path)
 print(f'this files has {lines} lines')

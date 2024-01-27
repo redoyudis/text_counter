@@ -1,4 +1,4 @@
-print("version2")
+fprint("version2")
 
-def times_one(num):
-    return num
+def times_three(num):
+    return num + num + num
